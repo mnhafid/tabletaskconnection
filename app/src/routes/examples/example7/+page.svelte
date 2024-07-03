@@ -29,8 +29,12 @@ let ptOptions: Options = {
     },
     userFunctions: {
         deleteActionCallback: (rows) => console.log('deleted rows:', rows),
-        editSubmissionCallback: (row) => console.log('updated row:', row),
+        editSubmissionCallback: (row) => updateData(row),
     },
+}
+
+function updateData(row: any){
+    console.log('updated row funct:', row);
 }
 
 function importJsonData(e: Event) {

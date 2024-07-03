@@ -17,7 +17,7 @@ let pages = {
 };
 </script>
 
-<nav>
+<!-- <nav>
     {#each Object.entries(pages) as [key, name]}
         <a
             href="{base}/examples/example{key}"
@@ -26,10 +26,10 @@ let pages = {
             {key}. {name}
         </a>
     {/each}
-</nav>
+</nav> -->
 
 {#if $page.data.routeIdMatches = new RegExp("^/examples\/example([0-9]+)$", "g").exec($page.route.id ?? '')}
-    <p class="setup-details">
+    <!-- <p class="setup-details">
         {#if $page.data.routeIdMatches[1] === '1'}
             This is a basic setup with no customizations.<br>
             ℹ️ Notice that when you sort the <b>Id</b> column, the order of the numbers is unusual (<code>1,10,100,...,2,20,200</code> instead of <code>1,2,3,4,5,6,...</code>). This is because by default columns are sorted alphabetically. To sort numbers, dates, and other data types, a <b>custom sorting</b> function can be used, as demonstrated in another example.
@@ -104,16 +104,18 @@ let pages = {
             The buttons in <code>id</code> column allow you to navigate to a different row. If the target row is located in a different page, page navigation will be performed programmatically.<br>
             ℹ️ When you need to add interactivity outside of the component (i.e. directly via DOM), avoid adding event attributes such as onClick inside a <code>customParse</code> function. Instead, use a built-in function such as <code>rowClicked</code> as demonstrated in the source code of this example.<br>
         {/if}
-    </p>
-
+    </p> -->
+    {#if $page.data.routeIdMatches[1] === '6'}
+  
+    {/if}        
     <slot></slot>
-
+<!-- 
     <p class="ref">
         See the source code 
         <a href="https://github.com/muonw/muonw-powertable/blob/main/app/src/routes/examples/example{$page.data.routeIdMatches[1]}/+page.svelte">
             here
         </a>
-    </p>
+    </p> -->
 {/if}
 
 <style lang="scss">

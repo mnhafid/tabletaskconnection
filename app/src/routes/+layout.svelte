@@ -19,6 +19,11 @@ onMount(() => {
     }
 });
 
+
+const handleChange = input => {
+    console.log('projectID', input);
+    localStorage.setItem('projectID', input);
+  };
 import '../lib_local/styles/main.scss';
 import '$lib/styles/power-table.scss';
 import '$lib/styles/power-table-mascara.scss';
@@ -31,6 +36,12 @@ import '$lib/styles/power-table-mascara.scss';
     </div>
     <button class="a compact" id='switch-to-light-mode' title="Light Mode" on:click={()=>switchColorScheme('light')}>☀️</button>
     <button class="a compact" id='switch-to-dark-mode' title="Dark Mode" on:click={()=>switchColorScheme('dark')}>🌙</button>
+    <div> 
+        <p>Input ProjectID <input type="text" on:input={() => handleChange}>
+        </p> </div>
+
+        <p>input event count: {handleChange}</p>
+
 </nav>
 
 <hr>

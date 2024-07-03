@@ -39,7 +39,7 @@
 		"svelte": "^4.0.0"
 	},
 	"devDependencies": {
-		"@muonw/mascara": "0.1.12",
+		"@muonw/mascara": "^0.1.12",
 		"@sveltejs/adapter-static": "^2.0.2",
 		"@sveltejs/kit": "^1.20.4",
 		"@sveltejs/package": "^2.0.0",

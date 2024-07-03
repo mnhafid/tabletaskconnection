@@ -1,0 +1,42 @@
+{
+	"/": [
+		"src/routes/+layout.ts",
+		"src/routes/+layout.ts"
+	],
+	"/examples": [
+		"src/routes/+layout.ts"
+	],
+	"/examples/example10": [
+		"src/routes/+layout.ts"
+	],
+	"/examples/example11": [
+		"src/routes/+layout.ts"
+	],
+	"/examples/example1": [
+		"src/routes/+layout.ts"
+	],
+	"/examples/example2": [
+		"src/routes/+layout.ts"
+	],
+	"/examples/example3": [
+		"src/routes/+layout.ts"
+	],
+	"/examples/example4": [
+		"src/routes/+layout.ts"
+	],
+	"/examples/example5": [
+		"src/routes/+layout.ts"
+	],
+	"/examples/example6": [
+		"src/routes/+layout.ts"
+	],
+	"/examples/example7": [
+		"src/routes/+layout.ts"
+	],
+	"/examples/example8": [
+		"src/routes/+layout.ts"
+	],
+	"/examples/example9": [
+		"src/routes/+layout.ts"
+	]
+}
