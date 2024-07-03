@@ -38,6 +38,7 @@
 	"peerDependencies": {
 		"svelte": "^4.0.0"
 	},
+	"dependencies": { "@sveltejs/adapter-vercel": "^5.4.0" },
 	"devDependencies": {
 		"@muonw/mascara": "^0.1.12",
 		"@sveltejs/adapter-static": "^2.0.2",

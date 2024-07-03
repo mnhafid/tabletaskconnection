@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<style>
+		@media screen and (prefers-color-scheme: dark) {
+			body {
+				background: #1e1e1e;
+			}
+		}
+		</style>
+		
+		<link rel="modulepreload" href="../_app/immutable/entry/start.598e5f60.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/scheduler.76be16dd.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons.93226e93.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/paths.2cbbc6ea.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.1f92f529.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.bd204057.js">
+	</head>
+	<body>
+		<div>
+			<script>
+				{
+					__sveltekit_bwu25z = {
+						assets: "/muonw-powertable",
+						base: new URL("..", location).pathname.slice(0, -1),
+						env: {}
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../_app/immutable/entry/start.598e5f60.js"),
+						import("../_app/immutable/entry/app.1f92f529.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element);
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
